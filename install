@@ -5,14 +5,24 @@ if test ! $(which brew); then
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-echo "Updating homebrew..."
+echo "Updating brew..."
 brew update
 
+echo "Installing brew packages..."
 brew tap caskroom/cask
-
-brew install mongodb 
+brew install fish mongodb 
 brew cask install shiftit robomongo transmission
 
+
+echo "Setting up fish as the default shell..."
+if ! grep -Fxq "/usr/local/bin/fish" /etc/shells; then
+  echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
+fi
+
+chsh -s /usr/local/bin/fish
+
+
+echo "Linking dotfiles..."
 ln -sf ~/.dotfiles/.bash_profile ~/.bash_profile
 ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
 
