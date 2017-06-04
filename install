@@ -11,7 +11,7 @@ brew update
 echo "Installing brew packages..."
 brew tap caskroom/cask
 brew install fish mongodb 
-brew cask install shiftit robomongo transmission
+brew cask install iterm2 shiftit robomongo transmission
 
 
 echo "Setting up fish as the default shell..."
