@@ -21,6 +21,11 @@ fi
 
 chsh -s /usr/local/bin/fish
 
+echo "Configuring iterm2..."
+defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.dotfiles"
+defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+#cp ~/.dotfiles/com.googlecode.iterm2.plist ~/Library/Preferences
+
 
 echo "Linking dotfiles..."
 ln -sf ~/.dotfiles/.bash_profile ~/.bash_profile
