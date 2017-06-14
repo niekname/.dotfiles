@@ -13,6 +13,7 @@ brew tap caskroom/cask
 brew install fish mongodb 
 brew cask install iterm2 shiftit robomongo transmission
 
+brew upgrade
 
 echo "Setting up fish as the default shell..."
 if ! grep -Fxq "/usr/local/bin/fish" /etc/shells; then
@@ -24,7 +25,6 @@ chsh -s /usr/local/bin/fish
 echo "Configuring iterm2..."
 defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.dotfiles"
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
-#cp ~/.dotfiles/com.googlecode.iterm2.plist ~/Library/Preferences
 
 
 echo "Linking dotfiles..."
