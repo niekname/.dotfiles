@@ -30,3 +30,6 @@ defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 echo "Linking dotfiles..."
 ln -sf ~/.dotfiles/.config ~/
 ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
+
+echo "Cleaning up..."
+brew cleanup
