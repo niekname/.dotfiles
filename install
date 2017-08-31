@@ -11,7 +11,7 @@ brew update
 echo "Installing brew packages..."
 brew tap caskroom/cask
 brew install fish git mongodb 
-brew cask install iterm2 shiftit robomongo transmission spotify
+brew cask install iterm2 shiftit robomongo transmission spotify virtualbox
 
 brew upgrade
 
