@@ -4,7 +4,7 @@
 [push]
 	default = current
 [alias]
-	ls = log --all --graph --pretty=format:'%C(blue)%h %Creset%C(dim white)%cd %Creset%s %C(dim white)(%cn) %C(cyan)%C(bold)%d'
+	l = log --all --graph --pretty=format:'%C(blue)%h %Creset%C(dim white)%cd %Creset%s %C(dim white)(%cn) %C(cyan)%C(bold)%d' --date=local
 	sl = shortlog --format='%C(yellow)%h %C(cyan)%cd %C(green)%ce %Creset%s'
 [core]
 	editor = /usr/bin/vim
