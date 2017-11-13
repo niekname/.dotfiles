@@ -4,7 +4,7 @@
 [push]
 	default = current
 [alias]
-	l = log --all --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+	ls = log --all --graph --pretty=format:'%C(blue)%h %Creset%C(dim white)%cd %Creset%s %C(dim white)(%cn) %C(cyan)%C(bold)%d'
 	sl = shortlog --format='%C(yellow)%h %C(cyan)%cd %C(green)%ce %Creset%s'
 [core]
 	editor = /usr/bin/vim
