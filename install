@@ -11,7 +11,7 @@ brew update
 echo "Installing brew packages..."
 brew tap caskroom/cask
 brew install fish git mongodb mas python3 awscli 
-brew cask install iterm2 shiftit robo-3t transmission spotify virtualbox postman java java8 firefox
+brew cask install iterm2 shiftit robo-3t transmission spotify virtualbox postman java java8 firefox atom
 
 brew upgrade
 brew cask upgrade
