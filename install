@@ -37,4 +37,3 @@ ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
 
 echo "Cleaning up..."
 brew cleanup
-brew cask cleanup
