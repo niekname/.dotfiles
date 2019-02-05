@@ -13,7 +13,6 @@ brew tap caskroom/cask
 brew install fish git mongodb mas python3 awscli serverless tree coreutils packer 
 brew cask install iterm2 shiftit robo-3t transmission spotify virtualbox postman java java8 firefox atom visual-studio-code slack
 
-brew upgrade --cleanup
 brew cask upgrade --greedy
 
 mas install 1278508951 #Trello
