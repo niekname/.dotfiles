@@ -9,3 +9,5 @@
 	poesj = push
 [core]
 	editor = /usr/bin/vim
+[pull]
+	ff = only
