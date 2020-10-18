@@ -9,8 +9,8 @@ echo "Updating brew..."
 brew update
 
 echo "Installing brew packages..."
-brew install fish git macvim mas python3 awscli tree coreutils gradle go tmux node tig
-brew cask install iterm2 shiftit transmission spotify postman java java11 firefox atom slack mobster intellij-idea-ce visual-studio-code lastpass aws-vault
+brew install fish git macvim mas python3 awscli tree coreutils gradle tmux node tig
+brew cask install iterm2 shiftit transmission postman java firefox atom slack mobster intellij-idea-ce visual-studio-code lastpass aws-vault
 
 brew upgrade
 brew cask upgrade --greedy
