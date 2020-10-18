@@ -9,8 +9,8 @@ echo "Updating brew..."
 brew update
 
 echo "Installing brew packages..."
-brew install fish git macvim mas python3 awscli tree coreutils gradle go tmux node
-brew cask install iterm2 shiftit transmission spotify postman java java11 firefox atom slack mobster intellij-idea-ce
+brew install fish git macvim mas python3 awscli tree coreutils gradle go tmux node tig
+brew cask install iterm2 shiftit transmission spotify postman java java11 firefox atom slack mobster intellij-idea-ce visual-studio-code lastpass aws-vault
 
 brew upgrade
 brew cask upgrade --greedy
@@ -25,10 +25,12 @@ fi
 
 chsh -s /usr/local/bin/fish
 
+echo "Configuring vim..."
+ln -sf ~/.dotfiles/.vimrc ~/.vimrc
+
 echo "Configuring iterm2..."
 defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.dotfiles"
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
-
 
 echo "Linking dotfiles..."
 ln -sf ~/.dotfiles/.config ~/
