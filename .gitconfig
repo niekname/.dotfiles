@@ -6,7 +6,6 @@
 [alias]
 	l = log --all --graph --pretty=format:'%C(blue)%h %Creset%C(dim white)%cd %Creset%s %C(dim white)(%cn) %C(cyan)%C(bold)%d' --date=local
 	sl = shortlog --format='%C(yellow)%h %C(cyan)%cd %C(green)%ce %Creset%s'
-	poesj = push
 [core]
 	editor = /usr/bin/vim
 [pull]

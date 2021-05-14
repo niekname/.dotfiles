@@ -1,0 +1,7 @@
+function jhome {
+  if [ -z $1 ]; then
+    /usr/libexec/java_home -V
+  else
+    export JAVA_HOME=$(/usr/libexec/java_home --version $1)
+  fi
+}
