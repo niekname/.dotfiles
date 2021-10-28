@@ -8,5 +8,6 @@
 	sl = shortlog --format='%C(yellow)%h %C(cyan)%cd %C(green)%ce %Creset%s'
 [core]
 	editor = /usr/bin/vim
+	excludesfile = /Users/niek/.global_gitignore
 [pull]
 	ff = only
