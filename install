@@ -1,23 +1,5 @@
 #!/usr/bin/env zsh
 
-if ! [ -d "$ZSH" ]; then
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-fi
-
-if ! [ -d $(which brew) ]; then
-  echo "Installing homebrew..."
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-fi
-
-echo "Updating brew..."
-brew update
-
-echo "Installing brew packages..."
-brew install git awscli tree tmux tig aws-vault 
-brew install iterm2 shiftit transmission slack 
-
-brew upgrade --greedy
-
 echo "Linking dotfiles..."
 ln -sf ~/.dotfiles/.ssh/config ~/.ssh/config
 ln -sf ~/.dotfiles/.global_gitignore ~/.global_gitignore
@@ -27,5 +9,3 @@ ln -sf ~/.dotfiles/.zprofile ~/.zprofile
 ln -sf ~/.dotfiles/.zfunctions ~/.zfunctions
 ln -sf ~/.dotfiles/.vimrc ~/.vimrc
 
-echo "Cleaning up..."
-brew cleanup
