@@ -5,3 +5,10 @@ function jhome {
     export JAVA_HOME=$(/usr/libexec/java_home --version $1)
   fi
 }
+
+function brew-up {
+  brew update
+  brew upgrade --greedy
+  brew cleanup
+}
+
