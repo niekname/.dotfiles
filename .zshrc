@@ -1,5 +1,7 @@
 . ~/.zfunctions
 
+alias tf="terraform"
+
 ZSH_THEME=""
 plugins=(git z)
 source $ZSH/oh-my-zsh.sh
