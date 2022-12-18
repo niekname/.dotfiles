@@ -9,5 +9,6 @@
 [core]
 	editor = /usr/bin/vim
 	excludesfile = /Users/niek/.global_gitignore
+	autocrlf = input
 [pull]
 	ff = only
