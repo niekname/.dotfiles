@@ -4,6 +4,7 @@ echo "Linking dotfiles..."
 ln -sf ~/.dotfiles/.ssh/config ~/.ssh/config
 ln -sf ~/.dotfiles/.global_gitignore ~/.global_gitignore
 ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
+ln -sf ~/.dotfiles/.tigrc ~/.tigrc
 ln -sf ~/.dotfiles/.zshrc ~/.zshrc
 ln -sf ~/.dotfiles/.zprofile ~/.zprofile
 ln -sf ~/.dotfiles/.zfunctions ~/.zfunctions
