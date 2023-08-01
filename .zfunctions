@@ -6,6 +6,14 @@ function jhome {
   fi
 }
 
+function idea {
+  open -na "IntelliJ IDEA.app" --args "$@"
+}
+
+function webstorm {
+  open -na "webstorm.app" --args "$@"
+}
+
 function brew-up {
   brew update
   brew upgrade --greedy
