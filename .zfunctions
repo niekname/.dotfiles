@@ -21,3 +21,6 @@ function update {
   brew cleanup
 }
 
+function port() {
+  lsof -nP -i4TCP:$1 | grep LISTEN
+}
