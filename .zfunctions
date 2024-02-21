@@ -24,3 +24,16 @@ function update {
 function port() {
   lsof -nP -i4TCP:$1 | grep LISTEN
 }
+
+function mobroom() {
+    if [[ -n $1 ]]; then
+        echo "MOB_TIMER_LOCAL=true" > ~/.mob
+        echo "MOB_TIMER_ROOM=\"$1\"" > ~/.mob
+        echo "MOB_TIMER_USER=\"${2:-"Niek"}\"" >> ~/.mob
+        echo "Happy mobbing"
+    fi
+    cat ~/.mob
+    if [[ -n $1 ]]; then
+        echo "https://timer.mob.sh/$1"
+    fi
+}
