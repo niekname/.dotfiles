@@ -1,4 +1,5 @@
 . ~/.zfunctions
+. ~/.zsh-conundra
 
 alias tf="terraform"
 
