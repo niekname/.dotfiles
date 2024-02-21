@@ -14,7 +14,8 @@ function webstorm {
   open -na "webstorm.app" --args "$@"
 }
 
-function brew-up {
+function update {
+  omz update
   brew update
   brew upgrade --greedy
   brew cleanup
