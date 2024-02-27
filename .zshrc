@@ -9,4 +9,4 @@ source $ZSH/oh-my-zsh.sh
 
 eval "$(starship init zsh)"
 
-jhome 17
+jhome 21 
