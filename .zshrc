@@ -1,10 +1,8 @@
 . ~/.zfunctions
 . ~/.zsh-conundra
 
-alias tf="terraform"
-
 ZSH_THEME=""
-plugins=(git z)
+plugins=(git z terraform)
 source $ZSH/oh-my-zsh.sh
 
 eval "$(starship init zsh)"
