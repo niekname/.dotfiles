@@ -12,3 +12,5 @@
 	autocrlf = input
 [pull]
 	ff = only
+[includeIf "gitdir:~/repos/conundra/"]
+	path = ~/repos/conundra/.gitconfig
