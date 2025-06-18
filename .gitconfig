@@ -16,3 +16,5 @@
 	path = ~/repos/conundra/.gitconfig
 [rerere]
 	enabled = true
+[branch]
+	sort = -committerdate
