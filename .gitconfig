@@ -12,8 +12,8 @@
 	autocrlf = input
 [pull]
 	ff = only
-[includeIf "gitdir:~/repos/conundra/"]
-	path = ~/repos/conundra/.gitconfig
+[includeIf "gitdir:~/repos/ptv/"]
+	path = ~/repos/ptv/.gitconfig
 [rerere]
 	enabled = true
 [branch]
